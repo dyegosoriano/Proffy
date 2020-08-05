@@ -1,10 +1,15 @@
 import { Router } from 'express'
 
 import ClassesController from './controller/ClassesController'
+import ConnectionsController from './controller/ConnectionsController'
 
 const routes = new Router()
 
-routes.post('/classes', ClassesController.store)
-routes.get('/classes', ClassesController.index)
+routes
+  .get('/classes', ClassesController.index)
+  .post('/classes', ClassesController.store)
+
+  .get('/connection', ConnectionsController.index)
+  .post('/connection', ConnectionsController.store)
 
 export default routes
