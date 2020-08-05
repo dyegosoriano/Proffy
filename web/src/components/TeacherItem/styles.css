@@ -65,8 +65,7 @@
   border-radius: 0.8rem;
   cursor: pointer;
   font: 700 1.4rem Archivo;
-  transition: 0.2s;
-
+  transition: all 0.2s;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -81,6 +80,7 @@
   .teacher-item footer {
     padding: 3.2rem;
   }
+
   .teacher-item > p {
     padding: 0 3.2rem;
   }
