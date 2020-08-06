@@ -1,6 +1,7 @@
 import React from 'react'
-import { View, Image, Text, TouchableOpacity } from 'react-native'
+import { View, Image, Text } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
+import { RectButton } from 'react-native-gesture-handler'
 
 import styles from './styles'
 
@@ -16,6 +17,10 @@ const Landing: React.FC = () => {
     navigation.navigate('GiveClasses')
   }
 
+  function handleNavigateStudyPages() {
+    navigation.navigate('Study')
+  }
+
   return (
     <View style={styles.container}>
       <Image style={styles.banner} source={LandingImg} />
@@ -27,20 +32,23 @@ const Landing: React.FC = () => {
       </Text>
 
       <View style={styles.buttonsContainer}>
-        <TouchableOpacity style={[styles.button, styles.buttonPrimary]}>
+        <RectButton
+          style={[styles.button, styles.buttonPrimary]}
+          onPress={handleNavigateStudyPages}
+        >
           <Image source={studyIcon} />
 
           <Text style={styles.buttonText}>Estudar</Text>
-        </TouchableOpacity>
+        </RectButton>
 
-        <TouchableOpacity
+        <RectButton
           style={[styles.button, styles.buttonSecondary]}
           onPress={handleNavigationGiveClasses}
         >
           <Image source={giveClassesImg} />
 
           <Text style={styles.buttonText}>Dar aulas</Text>
-        </TouchableOpacity>
+        </RectButton>
       </View>
 
       <Text style={styles.totalConnections}>
