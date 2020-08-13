@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
 
   priceValue: {
     fontFamily: 'Archivo_700Bold',
-    color: '#32264d',
+    color: '#8257e5',
     fontSize: 16,
   },
 

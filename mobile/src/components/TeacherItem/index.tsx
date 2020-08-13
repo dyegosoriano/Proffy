@@ -3,6 +3,8 @@ import { View, Image, Text, Linking } from 'react-native'
 import { RectButton } from 'react-native-gesture-handler'
 import AsyncStorage from '@react-native-community/async-storage'
 
+import api from '../../services/api'
+
 import heartOutlineIcon from '../../assets/images/icons/heart-outline.png'
 import unfavoriteIcon from '../../assets/images/icons/unfavorite.png'
 import whatsappIcon from '../../assets/images/icons/whatsapp.png'
@@ -19,6 +21,7 @@ export interface Teacher {
   subject: string
   whatsapp: string
 }
+
 interface TeacherItemProps {
   teacher: Teacher
   favored: boolean
@@ -27,7 +30,11 @@ interface TeacherItemProps {
 const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favored }) => {
   const [isFavored, setIsFavored] = useState(favored)
 
-  function handleLinkToWhatsapp() {
+  async function handleLinkToWhatsapp() {
+    await api.post('connection', {
+      user_id: teacher.id,
+    })
+
     Linking.openURL(`whatsapp://send?phone=${teacher.whatsapp}`)
   }
 
@@ -71,7 +78,7 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favored }) => {
       <View style={styles.footer}>
         <Text style={styles.price}>
           Preço/hora {'   '}
-          <Text style={styles.priceValue}>{teacher.cost}</Text>
+          <Text style={styles.priceValue}>R$ {teacher.cost}</Text>
         </Text>
 
         <View style={styles.buttonContainer}>
