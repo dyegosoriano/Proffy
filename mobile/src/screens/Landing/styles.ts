@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_400Regular',
     lineHeight: 30,
     marginTop: 80,
+    marginBottom: 30,
   },
 
   titleBold: {
