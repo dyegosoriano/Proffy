@@ -63,6 +63,12 @@ Api desenvolvida em NodeJS com acesso a banco de dados relacional SQLite. Esta a
 
 As rotas para acessar a API estão no arquivo **routes.js**. Você pode testar as rotas antes de usar o frontend com o software Insomnia.
 
+<div align='center'>
+  <a href="https://insomnia.rest/run/?label=Proffy&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fdyegosoriano%2FProffy%2Fmaster%2F.github%2Finsomnia.json" target="_blank">
+    <img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia">
+  </a>
+</div>
+
 # Front-End (Web e Mobile)
 
 Frontend web, desenvolvido em ReactJS. Nesta parte da aplicação, é possível entender diversos conceitos do React e do desenvolvimento web em geral.
