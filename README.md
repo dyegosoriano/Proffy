@@ -1,9 +1,9 @@
 <div align="center"><img src=".github/logo.svg" width="350px" /></div>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/HigorSnt/proffy?style=flat-square">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/HigorSnt/proffy?style=flat-square">
-  <img alt="GitHub" src="https://img.shields.io/github/license/HigorSnt/proffy?style=flat-square">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/dyegosoriano/proffy?style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/dyegosoriano/proffy?style=flat-square">
+  <img alt="GitHub" src="https://img.shields.io/github/license/dyegosoriano/proffy?style=flat-square">
   <br>
 </p>
 
